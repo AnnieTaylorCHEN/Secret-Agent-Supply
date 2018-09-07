@@ -60,6 +60,31 @@ header img {
     padding-top: 0.25rem;
 }
 
+@media only screen and (max-width: 1024px){
+    .new h2 {
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+    }
+}
+@media only screen and (max-width: 470px){
+
+    .banner {
+        height: 15rem;
+    }
+     .new {
+         position: relative;
+         top: 10rem;
+         width: auto;
+         padding: 1rem 2rem;
+         font-size: 0.77rem;
+     }
+
+    .new h2{
+        font-size: 1rem;
+    }
+}
+
+
 /*Navigation: menu*/
 nav {
     background-color: firebrick;
@@ -80,6 +105,21 @@ nav a:hover {
     background-color: pink;
 }
 
+.mobilenav {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .desktopnav {
+        display: none;
+    }
+
+    .mobilenav{
+        display: block;
+        text-align: center;
+    }
+}
+ 
 /*Product: display of products in grid*/
 .products {
     display: flex;
@@ -113,6 +153,26 @@ nav a:hover {
     padding: 0.5rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .item {
+        width: 47%;
+    }
+
+    .glasses {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .watch {
+        display: none;
+    }
+
+    .item {
+        width: 90%;
+    }
+}
+
 /*Information for location and hours*/
 .info {
     display: flex;
@@ -136,8 +196,25 @@ nav a:hover {
     padding-top: 1rem;
 }
 
+@media only screen and (max-width: 470px){
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoitem {
+        width: 90%;
+    }
+}
+
 /*Footer: copyright*/
 footer {
     background-color: black;
     padding: 5rem 0rem;
+}
+
+@media only screen and (max-width: 470px) {
+    footer {
+        text-align: center;
+    }
 }
